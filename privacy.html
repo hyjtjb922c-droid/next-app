@@ -17,6 +17,8 @@ header { display: flex; align-items: center; gap: 14px; margin-bottom: 28px; }
 h1 { font: 800 34px/1.15 ui-rounded, -apple-system, system-ui, sans-serif; margin: 0; }
 h2 { font: 700 20px/1.3 -apple-system, system-ui, sans-serif; margin: 28px 0 6px; }
 p { margin: 0 0 10px; }
+ul { margin: 0 0 12px; padding-left: 22px; }
+li { margin: 0 0 6px; }
 .muted { color: var(--muted); font-size: 15px; }
 .lang { display: flex; gap: 8px; margin: 0 0 24px; }
 .lang a { color: var(--accent); text-decoration: none; font-weight: 600; font-size: 15px; }
@@ -30,31 +32,71 @@ a { color: var(--accent); }
 <nav class="lang"><a href="#uk">Українська</a><a href="#en">English</a></nav><section id="uk" lang="uk">
 <h2>Українською</h2>
 <p class="muted">Оновлено 21 жовтня 2026</p>
-<h2>Коротко</h2><p>Next не збирає твої дані на свої сервери. Справи й категорії зберігаються на твоєму iPhone і в твоєму особистому iCloud. Ми не показуємо рекламу, не продаємо дані й не використовуємо сторонню аналітику.</p>
-<h2>Вхід через Apple</h2><p>Для входу використовується Apple ID. Apple передає застосунку незмінний ідентифікатор користувача і, якщо ти дозволиш, імʼя та email (можна приховати справжню адресу). Ці дані зберігаються лише на пристрої й потрібні, щоб відрізняти твій акаунт.</p>
-<h2>Справи та iCloud</h2><p>Справи, категорії, нотатки й дати синхронізуються через iCloud у твою приватну базу даних Apple. Доступ до неї маєш лише ти; розробник Next її не бачить. Місце займається з твого сховища iCloud.</p>
-<h2>Сім&#x27;я (7Я)</h2><p>Якщо ти створюєш сім&#x27;ю або приєднуєшся до неї, список «Продукти» й імʼя з твого профілю зберігаються в спільній зоні iCloud того, хто створив сім&#x27;ю, і доступні всім, хто знає код сім&#x27;ї. Сам код і посилання на спільний доступ зберігаються в загальнодоступній базі iCloud застосунку. Вийти з сім&#x27;ї або видалити її можна будь-коли в Налаштуваннях → 7Я.</p>
-<h2>Голос</h2><p>Коли ти диктуєш справу, звук розпізнає служба мовлення Apple — на пристрої, а якщо це неможливо, на серверах Apple. Next отримує лише текст і не зберігає записів голосу.</p>
-<h2>Фото профілю</h2><p>Фото, яке ти обираєш для профілю, зберігається лише на цьому пристрої й нікуди не передається.</p>
-<h2>Сповіщення</h2><p>Нагадування плануються на самому пристрої. Next не використовує сторонніх сервісів для сповіщень.</p>
-<h2>Видалення даних</h2><p>У Налаштуваннях → «Видалити акаунт» можна стерти всі справи з пристрою та iCloud. Доступ Next до Apple ID також можна відкликати в Налаштуваннях iPhone → Apple ID → «Вхід через Apple».</p>
-<h2>Діти</h2><p>Next не призначений для дітей молодше 13 років і свідомо не збирає їхніх даних.</p>
-<h2>Зміни</h2><p>Якщо політика зміниться, нова версія зʼявиться в застосунку з датою оновлення.</p>
-<p class="muted">Розробник: Roman Kotenko · <a href="mailto:rkotenko75@gmail.com">rkotenko75@gmail.com</a></p>
+<h2>Хто ми</h2>
+<p>Next — застосунок для iPhone, який розробляє Роман Котенко (далі — «розробник», «ми»). Ця політика пояснює, які дані обробляє Next, де вони зберігаються і як ними керувати. Вона стосується застосунку Next і його віджетів.</p>
+<h2>Коротко</h2>
+<ul><li>Ми не збираємо персональні дані й не маємо власних серверів.</li><li>Ваші справи зберігаються на пристрої та у вашому приватному iCloud.</li><li>У Next немає реклами, аналітики й відстеження.</li><li>Ми не продаємо й не передаємо ваші дані третім особам.</li></ul>
+<h2>Які дані обробляє Next</h2>
+<ul><li>Вміст, який ви створюєте: справи, категорії, нотатки, дати, фото до справ.</li><li>Дані облікового запису «Вхід через Apple»: незмінний ідентифікатор користувача, а також імʼя та email, якщо ви дозволили їх передати (email можна приховати).</li><li>Фото профілю, якщо ви його обрали.</li><li>Голос під час диктовки справи.</li></ul>
+<p>Ці дані потрібні лише для роботи функцій застосунку й не надходять розробнику.</p>
+<h2>Де зберігаються дані</h2>
+<ul><li>На пристрої. Справи, налаштування, ідентифікатор входу (у Keychain) і фото профілю зберігаються на вашому iPhone.</li><li>В iCloud. Якщо iCloud увімкнено, справи синхронізуються через Apple CloudKit у вашу приватну базу даних. Доступ до неї маєте лише ви; розробник її не бачить. Дані займають місце у вашому сховищі iCloud і захищені Apple.</li><li>Фото профілю нікуди не передається й залишається тільки на пристрої.</li></ul>
+<h2>Спільні «Продукти» (7Я)</h2>
+<p>Функція вмикається лише за вашою дією. Коли ви створюєте сім&#x27;ю або приєднуєтеся до неї:</p>
+<ul><li>список «Продукти» та імʼя з вашого профілю зберігаються в спільній зоні iCloud людини, яка створила сім&#x27;ю, і доступні учасникам сім&#x27;ї;</li><li>код сім&#x27;ї та посилання на спільний доступ зберігаються в загальнодоступній базі iCloud застосунку, тому кожен, хто знає код, може приєднатися;</li><li>інші ваші справи й категорії залишаються приватними.</li></ul>
+<p>Вийти із сім&#x27;ї або видалити її можна будь-коли: Налаштування → 7Я.</p>
+<h2>Сервіси Apple</h2>
+<p>Next використовує сервіси Apple, на які поширюється політика конфіденційності Apple (apple.com/legal/privacy):</p>
+<ul><li>«Вхід через Apple» — для входу;</li><li>iCloud і CloudKit — для синхронізації та спільних «Продуктів»;</li><li>розпізнавання мовлення — для диктовки. Запис обробляється на пристрої, а якщо це неможливо — на серверах Apple. Next отримує лише текст і не зберігає записи голосу;</li><li>App Store і TestFlight можуть надавати розробнику знеособлені звіти про збої та статистику, якщо ви дозволили це в налаштуваннях iPhone.</li></ul>
+<p>Інших сторонніх сервісів, SDK, реклами чи аналітики в Next немає.</p>
+<h2>Сповіщення й віджети</h2>
+<p>Нагадування плануються на самому пристрої. Віджети отримують дані через спільне сховище застосунку на тому ж iPhone. Сповіщення про нові сімейні покупки надходять через iCloud від Apple.</p>
+<h2>Зберігання й видалення</h2>
+<p>Дані зберігаються, доки ви їх не видалите.</p>
+<ul><li>Окремі справи й категорії видаляються в застосунку.</li><li>Налаштування → «Видалити акаунт» стирає всі справи з пристрою та iCloud.</li><li>Доступ Next до Apple ID можна відкликати: Параметри iPhone → [ваше імʼя] → «Вхід через Apple».</li><li>Дані Next в iCloud також можна видалити в Параметрах iPhone → iCloud → «Керувати сховищем».</li></ul>
+<h2>Ваші права</h2>
+<p>Оскільки розробник не отримує й не зберігає ваших даних, ви керуєте ними безпосередньо в застосунку та в налаштуваннях iCloud: можете переглянути, експортувати (Налаштування → «Експорт JSON»), змінити або видалити їх. Якщо у вас є питання щодо даних, напишіть нам.</p>
+<h2>Діти</h2>
+<p>Next не призначений для дітей віком до 13 років і свідомо не збирає їхніх даних.</p>
+<h2>Зміни політики</h2>
+<p>Якщо політика зміниться, нова версія зʼявиться в застосунку та на сайті з новою датою оновлення. Про суттєві зміни ми повідомимо в описі оновлення застосунку.</p>
+<h2>Контакти</h2>
+<p>Роман Котенко, розробник Next.</p>
+<p>Email: rkotenko75@gmail.com</p>
 </section><section id="en" lang="en">
 <h2>In English</h2>
 <p class="muted">Updated October 21, 2026</p>
-<h2>In short</h2><p>Next doesn’t collect your data on its own servers. Tasks and categories are stored on your iPhone and in your personal iCloud. We don’t show ads, sell data or use third-party analytics.</p>
-<h2>Sign in with Apple</h2><p>You sign in with your Apple ID. Apple gives the app a permanent user identifier and, if you allow it, your name and email (you can hide your real address). This data is stored only on the device and is used to tell your account apart.</p>
-<h2>Tasks and iCloud</h2><p>Tasks, categories, notes and dates sync through iCloud to your private Apple database. Only you have access to it; the developer of Next can’t see it. It uses space in your iCloud storage.</p>
-<h2>Family</h2><p>If you create or join a family, the Groceries list and the name from your profile are stored in a shared iCloud zone of the person who created the family and are available to everyone who knows the family code. The code and the sharing link are stored in the app’s public iCloud database. You can leave or delete the family at any time in Settings → Family.</p>
-<h2>Voice</h2><p>When you dictate a task, Apple’s speech service recognizes the audio — on the device, or on Apple’s servers when that isn’t possible. Next receives only the text and keeps no voice recordings.</p>
-<h2>Profile photo</h2><p>The photo you choose for your profile is stored only on this device and isn’t sent anywhere.</p>
-<h2>Notifications</h2><p>Reminders are scheduled on the device itself. Next uses no third-party notification services.</p>
-<h2>Deleting data</h2><p>In Settings → “Delete account” you can erase all tasks from the device and iCloud. You can also revoke Next’s access to your Apple ID in iPhone Settings → Apple ID → “Sign in with Apple”.</p>
-<h2>Children</h2><p>Next isn’t meant for children under 13 and doesn’t knowingly collect their data.</p>
-<h2>Changes</h2><p>If the policy changes, the new version will appear in the app with the date of the update.</p>
-<p class="muted">Developer: Roman Kotenko · <a href="mailto:rkotenko75@gmail.com">rkotenko75@gmail.com</a></p>
+<h2>Who we are</h2>
+<p>Next is an iPhone app developed by Roman Kotenko (“the developer”, “we”). This policy explains what data Next handles, where it is stored and how you can control it. It applies to the Next app and its widgets.</p>
+<h2>Summary</h2>
+<ul><li>We do not collect personal data and run no servers of our own.</li><li>Your tasks are stored on your device and in your private iCloud.</li><li>Next has no ads, analytics or tracking.</li><li>We do not sell or share your data with third parties.</li></ul>
+<h2>What data Next handles</h2>
+<ul><li>Content you create: tasks, categories, notes, dates and photos attached to tasks.</li><li>Sign in with Apple account data: a stable user identifier and, if you allow it, your name and email (you can hide your email).</li><li>A profile photo, if you choose one.</li><li>Your voice while you dictate a task.</li></ul>
+<p>This data is used only to make the app’s features work and is never sent to the developer.</p>
+<h2>Where data is stored</h2>
+<ul><li>On your device. Tasks, settings, the sign-in identifier (in the Keychain) and your profile photo are stored on your iPhone.</li><li>In iCloud. If iCloud is on, tasks sync through Apple CloudKit to your private database. Only you have access to it; the developer cannot see it. The data uses space in your iCloud storage and is protected by Apple.</li><li>Your profile photo is not sent anywhere and stays on the device.</li></ul>
+<h2>Shared Groceries (Family)</h2>
+<p>This feature turns on only when you use it. When you create or join a family:</p>
+<ul><li>the Groceries list and the name from your profile are stored in a shared iCloud zone of the person who created the family and are available to family members;</li><li>the family code and sharing link are stored in the app’s public iCloud database, so anyone who knows the code can join;</li><li>your other tasks and categories stay private.</li></ul>
+<p>You can leave or delete the family at any time in Settings → Family.</p>
+<h2>Apple services</h2>
+<p>Next uses Apple services, which are covered by Apple’s Privacy Policy (apple.com/legal/privacy):</p>
+<ul><li>Sign in with Apple — to sign in;</li><li>iCloud and CloudKit — for sync and shared Groceries;</li><li>speech recognition — for dictation. Audio is processed on the device or, when that isn’t possible, on Apple’s servers. Next receives only the text and keeps no voice recordings;</li><li>the App Store and TestFlight may give the developer anonymised crash reports and statistics if you allowed this in iPhone Settings.</li></ul>
+<p>Next contains no other third-party services, SDKs, ads or analytics.</p>
+<h2>Notifications and widgets</h2>
+<p>Reminders are scheduled on the device itself. Widgets read data from the app’s shared storage on the same iPhone. Notifications about new family groceries arrive through Apple’s iCloud.</p>
+<h2>Retention and deletion</h2>
+<p>Data is kept until you delete it.</p>
+<ul><li>Delete individual tasks and categories in the app.</li><li>Settings → “Delete account” erases all tasks from the device and iCloud.</li><li>You can revoke Next’s access to your Apple ID in iPhone Settings → [your name] → Sign in with Apple.</li><li>You can also delete Next’s iCloud data in iPhone Settings → iCloud → Manage Storage.</li></ul>
+<h2>Your rights</h2>
+<p>Because the developer does not receive or store your data, you control it directly in the app and in iCloud settings: you can view, export (Settings → Export JSON), change or delete it. If you have questions about your data, contact us.</p>
+<h2>Children</h2>
+<p>Next is not intended for children under 13 and does not knowingly collect their data.</p>
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the new version will appear in the app and on the website with a new “updated” date. We will mention significant changes in the app’s release notes.</p>
+<h2>Contact</h2>
+<p>Roman Kotenko, developer of Next.</p>
+<p>Email: rkotenko75@gmail.com</p>
 </section>
 </main></body>
 </html>
